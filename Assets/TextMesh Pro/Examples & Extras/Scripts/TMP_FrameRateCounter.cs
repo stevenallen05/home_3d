@@ -20,7 +20,7 @@ namespace TMPro.Examples
 
         private TextMeshPro m_TextMeshPro;
         private Transform m_frameCounter_transform;
-        private Camera m_camera;
+        private CamTest m_camera;
 
         private FpsCounterAnchorPositions last_AnchorPosition;
 
@@ -29,7 +29,7 @@ namespace TMPro.Examples
             if (!enabled)
                 return;
 
-            m_camera = Camera.main;
+            m_camera = CamTest.main;
             Application.targetFrameRate = 9999;
 
             GameObject frameCounter = new GameObject("Frame Counter");
